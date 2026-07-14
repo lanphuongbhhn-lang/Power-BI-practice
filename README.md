@@ -8,7 +8,17 @@
 Dự án phân tích hiệu suất kinh doanh (Doanh thu & Lợi nhuận) dựa trên tệp dữ liệu giao dịch mẫu. Quy trình thực hiện đi từ khâu lấy mẫu ngẫu nhiên, làm sạch dữ liệu bằng Excel, trực quan hóa tương tác trên Dashboard đến việc trích xuất các insight chiến lược cốt lõi cho doanh nghiệp.
 
 ---
+# 📊 Sales & Profit Analytics Dashboard
 
+## 📌 Project Overview
+
+This project analyzes sales and profit performance using Excel and Power BI. It includes:
+
+- Data cleaning
+- Descriptive statistics
+- Interactive dashboard
+- Business insights
+- Strategic recommendations
 ## 📋 Mục lục
 1. [Phần 1: Làm sạch Dữ liệu & Thống kê Mô tả](#phần-1-làm-sạch-dữ-liệu--thống-kê-mô-tả)
 2. [Phần 2: Trực quan hóa & Dashboard Tương tác](#phần-2-trực-quan-hóa--dashboard-tương-tác)
@@ -50,7 +60,7 @@ DATATABLE(
         {"Max"}
     }
 )
-
+```
 ### 📊 Bảng Matrix Thống kê Mô tả (Descriptive Statistics)
 
 | Statistic | Sales Statistics | Profit Statistic |
@@ -112,20 +122,24 @@ DATATABLE(
 ---
 
 ## Phần 4: Kết luận & Hàm ý Chính sách
+## Phần 4: Kết luận & Hàm ý Chính sách
 
-┌────────────────────────────────────────────────────────────────────────┐
-│                      KẾ HOẠCH HÀNH ĐỘNG CHIẾN LƯỢC                     │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │
-         ┌──────────────────────────┼──────────────────────────┐
-         ▼                          ▼                          ▼
-┌──────────────────┐       ┌──────────────────┐       ┌──────────────────┐
-│  ƯU TIÊN NHÓM    │       │ SIẾT CHẶT KHUNG  │       │ BÁN CHÉO SẢN PHẨM│
-│    CORPORATE     │       │     DISCOUNT     │       │  (CROSS-SELLING) │
-│ Thiết lập dịch vụ│       │ Khống chế mức    │       │ Đóng gói Combo:  │
-│ VIP chuyên biệt. │       │ chiết khấu < 30%.│       │ Tech + Furniture.│
-└──────────────────┘       └──────────────────┘       └──────────────────┘
-
+```text
+                          KẾ HOẠCH HÀNH ĐỘNG CHIẾN LƯỢC
+                                      │
+        ┌─────────────────────────────┼─────────────────────────────┐
+        │                             │                             │
+        ▼                             ▼                             ▼
+┌───────────────────┐      ┌───────────────────┐      ┌────────────────────┐
+│ ƯU TIÊN           │      │ KIỂM SOÁT         │      │ BÁN CHÉO           │
+│ KHÁCH HÀNG        │      │ CHIẾT KHẤU        │      │ SẢN PHẨM           │
+│ CORPORATE         │      │ (< 30%)           │      │ (Cross-selling)    │
+├───────────────────┤      ├───────────────────┤      ├────────────────────┤
+│ • Dịch vụ VIP     │      │ • Thiết lập ngưỡng│      │ • Tech + Furniture │
+│ • Hợp đồng dài hạn│      │ • Cảnh báo tự động│      │ • Tech + Office    │
+│ • Chăm sóc riêng  │      │ • Kiểm soát lỗ    │      │ • Tăng giá trị đơn │
+└───────────────────┘      └───────────────────┘      └────────────────────┘
+```
 
 1. **Tập trung nguồn lực vào phân khúc Corporate:** Xây dựng chính sách chăm sóc khách hàng VIP, hợp đồng dài hạn để tối ưu dòng tiền ổn định[cite: 3].
 2. **Quản trị rủi ro chiết khấu:** Cài đặt hạn mức chiết khấu trên hệ thống bán hàng, kiểm soát chặt chẽ các đơn hàng có mức chiết khấu từ 30% trở lên để ngăn ngừa rủi ro lỗ nặng[cite: 3].
