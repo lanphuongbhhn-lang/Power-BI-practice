@@ -33,14 +33,14 @@ This project analyzes sales and profit performance using Excel and Power BI. It 
 Để đảm bảo dữ liệu tinh gọn và khách quan trước khi đưa vào công cụ BI, các bước sau đã được thực hiện:
 * **Lấy mẫu ngẫu nhiên (Random Sampling):** 
   * Tạo một cột phụ và sử dụng hàm `=RAND()` để gán số ngẫu nhiên cho toàn bộ các dòng giao dịch.
-  * Sao chép cột ngẫu nhiên này và dán lại dưới dạng **Value (Giá trị)** ở cột bên cạnh để cố định tập mẫu gồm **3.000 giao dịch**[cite: 3].
+  * Sao chép cột ngẫu nhiên này và dán lại dưới dạng **Value (Giá trị)** ở cột bên cạnh để cố định tập mẫu gồm **3.000 giao dịch**.
 * **Làm sạch & Chuẩn hóa cấu trúc:**
-  * **Định dạng Ngày tháng:** Chuyển đổi và định dạng lại cột ngày tháng về chuẩn đồng nhất[cite: 3].
-  * **Xử lý chuỗi văn bản:** Áp dụng công cụ **Text to Columns** tại thẻ *Data* để phân tách chính xác dữ liệu ngày[cite: 3].
+  * **Định dạng Ngày tháng:** Chuyển đổi và định dạng lại cột ngày tháng về chuẩn đồng nhất.
+  * **Xử lý chuỗi văn bản:** Áp dụng công cụ **Text to Columns** tại thẻ *Data* để phân tách chính xác dữ liệu ngày.
   * **Kiểm tra lỗi hệ thống (QA Benchmarks):** 
-    * Xác nhận không có dòng dữ liệu nào bị trùng lặp (No duplicate rows)[cite: 3].
-    * Xác nhận không có dữ liệu trống/bị khuyết thiếu (No missing data)[cite: 3].
-    * Đảm bảo tất cả các cột định lượng (Sales, Profit,...) đã ở định dạng Số (Number)[cite: 3].
+    * Xác nhận không có dòng dữ liệu nào bị trùng lặp (No duplicate rows).
+    * Xác nhận không có dữ liệu trống/bị khuyết thiếu (No missing data).
+    * Đảm bảo tất cả các cột định lượng (Sales, Profit,...) đã ở định dạng Số (Number).
 
 ---
 
@@ -72,7 +72,7 @@ DATATABLE(
 | **Mode** | 12.96 | 6.22 |
 | **Min** | 0.44 | -2,929.48 |
 
-*Dữ liệu được tổ chức dưới dạng bảng ma trận đa chiều, cho phép lọc tương tác bằng 2 Slicer: **Segment** (Consumer, Corporate, Home Office) và **Category** (Furniture, Office Supplies, Technology)[cite: 3].*
+*Dữ liệu được tổ chức dưới dạng bảng ma trận đa chiều, cho phép lọc tương tác bằng 2 Slicer: **Segment** (Consumer, Corporate, Home Office) và **Category** (Furniture, Office Supplies, Technology).*
 
 ---
 
@@ -85,20 +85,20 @@ DATATABLE(
 <summary>📐 <b>Xem chi tiết: Thiết kế biểu đồ & Ứng dụng doanh nghiệp</b> (Click để mở rộng)</summary>
 
 1. **Clustered Bar Chart (Ngang) – Doanh thu & Lợi nhuận Trung bình theo Segment**
-   * *Ý nghĩa:* So sánh trực tiếp hiệu suất trung bình giữa các phân khúc khách hàng[cite: 3].
-   * *Ứng dụng:* Giúp định vị nhóm khách hàng mang lại biên lợi nhuận tốt nhất để tối ưu chi phí phục vụ[cite: 3].
+   * *Ý nghĩa:* So sánh trực tiếp hiệu suất trung bình giữa các phân khúc khách hàng.
+   * *Ứng dụng:* Giúp định vị nhóm khách hàng mang lại biên lợi nhuận tốt nhất để tối ưu chi phí phục vụ.
 2. **Clustered Bar Chart (Ngang) – Tổng Doanh thu & Tổng Lợi nhuận theo Segment**
-   * *Ý nghĩa:* Đánh giá quy mô đóng góp tuyệt đối thay vì giá trị trung bình[cite: 3].
-   * *Ứng dụng:* Phát hiện các phân khúc "doanh thu khủng nhưng lợi nhuận mỏng"[cite: 3].
+   * *Ý nghĩa:* Đánh giá quy mô đóng góp tuyệt đối thay vì giá trị trung bình.
+   * *Ứng dụng:* Phát hiện các phân khúc "doanh thu khủng nhưng lợi nhuận mỏng".
 3. **Clustered Column Chart (Dọc) – Tổng Sales theo Region**
-   * *Ý nghĩa:* So sánh doanh thu địa lý giữa các vùng (West, South, East, Central), kết hợp Line xu hướng[cite: 3].
-   * *Ứng dụng:* Hỗ trợ phân bổ nguồn lực bán hàng, marketing và lập kế hoạch kho bãi[cite: 3].
+   * *Ý nghĩa:* So sánh doanh thu địa lý giữa các vùng (West, South, East, Central), kết hợp Line xu hướng.
+   * *Ứng dụng:* Hỗ trợ phân bổ nguồn lực bán hàng, marketing và lập kế hoạch kho bãi.
 4. **Donut Chart – Tổng Sales theo Category**
-   * *Ý nghĩa:* Thể hiện tỷ trọng đóng góp của 3 nhóm sản phẩm lớn[cite: 3].
-   * *Ứng dụng:* Xác định sản phẩm "xương sống" để tập trung đầu tư R&D và Marketing[cite: 3].
+   * *Ý nghĩa:* Thể hiện tỷ trọng đóng góp của 3 nhóm sản phẩm lớn.
+   * *Ứng dụng:* Xác định sản phẩm "xương sống" để tập trung đầu tư R&D và Marketing.
 5. **Scatter Chart – Ngoại lai Sales theo phân bố Discount**
-   * *Ý nghĩa:* Phát hiện các điểm bất thường (outliers) trong mối quan hệ giữa chiết khấu và doanh số[cite: 3].
-   * *Ứng dụng:* Kiểm soát tính hiệu quả của chiến dịch giảm giá, ngăn ngừa việc giảm sâu gây lỗ[cite: 3].
+   * *Ý nghĩa:* Phát hiện các điểm bất thường (outliers) trong mối quan hệ giữa chiết khấu và doanh số.
+   * *Ứng dụng:* Kiểm soát tính hiệu quả của chiến dịch giảm giá, ngăn ngừa việc giảm sâu gây lỗ.
 </details>
 
 ---
@@ -106,18 +106,18 @@ DATATABLE(
 ## Phần 3: Phân tích Chuyên sâu (Deep-dive Insights)
 
 ### 👥 1. Hiệu năng theo Phân khúc Khách hàng (Segment)
-* **Corporate:** Là **phân khúc sinh lời tốt nhất** (cả về giá trị trung bình lẫn tổng giá trị đóng góp)[cite: 3]. Đây là nhóm khách hàng ổn định và mang lại giá trị dài hạn[cite: 3].
-* **Home Office:** Đang rơi vào bẫy "doanh số ảo"[cite: 3]. Doanh số bán ra tương đối ổn định nhưng lợi nhuận mang lại rất thấp, có thể do chi phí phục vụ hoặc tỷ lệ chiết khấu quá cao[cite: 3].
-* **Consumer:** Chiếm volume lớn nhưng biên lợi nhuận mỏng[cite: 3].
+* **Corporate:** Là **phân khúc sinh lời tốt nhất** (cả về giá trị trung bình lẫn tổng giá trị đóng góp). Đây là nhóm khách hàng ổn định và mang lại giá trị dài hạn.
+* **Home Office:** Đang rơi vào bẫy "doanh số ảo". Doanh số bán ra tương đối ổn định nhưng lợi nhuận mang lại rất thấp, có thể do chi phí phục vụ hoặc tỷ lệ chiết khấu quá cao.
+* **Consumer:** Chiếm volume lớn nhưng biên lợi nhuận mỏng.
 
 ### 📉 2. Tác động của Chính sách Chiết khấu (Discount)
-* Phân tích cho thấy **Discount có ảnh hưởng cực kỳ tiêu cực đến Profit**[cite: 3].
-* **Ngưỡng nguy hiểm:** Khi mức Discount vượt quá **0.3 (30%)**, Profit của doanh nghiệp ngay lập tức bị xói mòn và lao dốc xuống mức âm (thua lỗ)[cite: 3].
-* **Điểm ngoại lai (Outliers):** Biểu đồ Scatter phân tán chỉ ra các điểm bất thường: có những đơn hàng được giảm giá cực sâu nhưng Doanh số lại không tăng tương ứng; ngược lại có những giao dịch không cần chiết khấu vẫn phát sinh doanh số lớn[cite: 3].
+* Phân tích cho thấy **Discount có ảnh hưởng cực kỳ tiêu cực đến Profit**.
+* **Ngưỡng nguy hiểm:** Khi mức Discount vượt quá **0.3 (30%)**, Profit của doanh nghiệp ngay lập tức bị xói mòn và lao dốc xuống mức âm (thua lỗ).
+* **Điểm ngoại lai (Outliers):** Biểu đồ Scatter phân tán chỉ ra các điểm bất thường: có những đơn hàng được giảm giá cực sâu nhưng Doanh số lại không tăng tương ứng; ngược lại có những giao dịch không cần chiết khấu vẫn phát sinh doanh số lớn.
 
 ### 📦 3. Danh mục Sản phẩm & Địa lý vùng miền
-* **Technology** là danh mục chiếm tỷ trọng doanh thu cao nhất (khoảng **34.79%**), đóng vai trò là "mũi nhọn" tăng trưởng doanh thu[cite: 3].
-* **South** và **West** là các vùng có mức tổng doanh số dẫn đầu, trong đó vùng **Central** có mức đóng góp thấp hơn hẳn, bộc lộ sự hạn chế về mặt thị phần[cite: 3].
+* **Technology** là danh mục chiếm tỷ trọng doanh thu cao nhất (khoảng **34.79%**), đóng vai trò là "mũi nhọn" tăng trưởng doanh thu.
+* **South** và **West** là các vùng có mức tổng doanh số dẫn đầu, trong đó vùng **Central** có mức đóng góp thấp hơn hẳn, bộc lộ sự hạn chế về mặt thị phần.
 
 ---
 
@@ -140,8 +140,9 @@ DATATABLE(
 └───────────────────┘      └───────────────────┘      └────────────────────┘
 ```
 
-1. **Tập trung nguồn lực vào phân khúc Corporate:** Xây dựng chính sách chăm sóc khách hàng VIP, hợp đồng dài hạn để tối ưu dòng tiền ổn định[cite: 3].
-2. **Quản trị rủi ro chiết khấu:** Cài đặt hạn mức chiết khấu trên hệ thống bán hàng, kiểm soát chặt chẽ các đơn hàng có mức chiết khấu từ 30% trở lên để ngăn ngừa rủi ro lỗ nặng[cite: 3].
-3. **Đẩy mạnh chiến lược Bán chéo (Cross-selling):** Tận dụng sức hút của ngành hàng **Technology** để bán kèm các dòng sản phẩm có dòng tiền ổn định như **Office Supplies** và **Furniture**[cite: 3].
-4. **Tái phân bổ nguồn lực vùng miền:** Tập trung giữ chân khách hàng tại các vùng trọng điểm (West, South) và đánh giá lại hiệu quả chi phí vận hành tại vùng Central[cite: 3].
-5. **Giám sát rủi ro đuôi (Tail-Risk):** Thiết lập hệ thống cảnh báo sớm khi biên lợi nhuận của một đơn hàng bị rơi vào vùng âm quá sâu[cite: 3].
+1. **Tập trung nguồn lực vào phân khúc Corporate:** Xây dựng chính sách chăm sóc khách hàng VIP, hợp đồng dài hạn để tối ưu dòng tiền ổn định.
+2. **Quản trị rủi ro chiết khấu:** Cài đặt hạn mức chiết khấu trên hệ thống bán hàng, kiểm soát chặt chẽ các đơn hàng có mức chiết khấu từ 30% trở lên để ngăn ngừa rủi ro lỗ nặng.
+3. **Đẩy mạnh chiến lược Bán chéo (Cross-selling):** Tận dụng sức hút của ngành hàng **Technology** để bán kèm các dòng sản phẩm có dòng tiền ổn định như **Office Supplies** và **Furniture**.
+4. **Tái phân bổ nguồn lực vùng miền:** Tập trung giữ chân khách hàng tại các vùng trọng điểm (West, South) và đánh giá lại hiệu quả chi phí vận hành tại vùng Central.
+5. **Giám sát rủi ro đuôi (Tail-Risk):** Thiết lập hệ thống cảnh báo sớm khi biên lợi nhuận của một đơn hàng bị rơi vào vùng âm quá sâu.
+
