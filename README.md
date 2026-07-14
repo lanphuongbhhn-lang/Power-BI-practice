@@ -8,7 +8,6 @@
 Dự án phân tích hiệu suất kinh doanh (Doanh thu & Lợi nhuận) dựa trên tệp dữ liệu giao dịch mẫu. Quy trình thực hiện đi từ khâu lấy mẫu ngẫu nhiên, làm sạch dữ liệu bằng Excel, trực quan hóa tương tác trên Dashboard đến việc trích xuất các insight chiến lược cốt lõi cho doanh nghiệp.
 
 ---
-# 📊 Sales & Profit Analytics Dashboard
 
 ## 📌 Project Overview
 
