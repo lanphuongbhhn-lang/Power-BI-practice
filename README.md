@@ -122,7 +122,6 @@ DATATABLE(
 ---
 
 ## Phần 4: Kết luận & Hàm ý Chính sách
-## Phần 4: Kết luận & Hàm ý Chính sách
 
 ```text
                           KẾ HOẠCH HÀNH ĐỘNG CHIẾN LƯỢC
